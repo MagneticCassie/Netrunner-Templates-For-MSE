@@ -1,0 +1,245 @@
+mse version: 2.0.0
+short name: ANR symbols
+position hint: 201
+icon: credit.png
+installer group: androidnetrunner/symbol-font
+
+image font size: 33
+
+symbol: 
+	code: ssClick
+	image: click.png
+	image font size: 33
+
+symbol:
+	code: ssCredit
+	image: credit.png
+	image font size: 33
+
+symbol:
+	code: ssLink
+	image: link.png
+	image font size: 33
+
+symbol:
+	code: ssMU
+	image: MU.png
+	image font size: 33
+
+symbol:
+	code: ssRecurrent
+	image: recurrent.png
+	image font size: 33
+
+symbol:
+	code: ssSub
+	image: sub.png
+	image font size: 33
+
+symbol:
+	code: ssTrash
+	image: trash.png
+	image font size: 33
+
+symbol:
+	code: ssDiamond
+	image: diamond.png
+	image font size: 23
+
+symbol:
+	code: ss1
+	image: 1.png
+	image font size: 35
+
+symbol:
+	code: ss2
+	image: 2.png
+	image font size: 35
+
+symbol:
+	code: ss3
+	image: 3.png
+	image font size: 35
+
+symbol:
+	code: ss4
+	image: 4.png
+	image font size: 35
+
+symbol:
+	code: ss5
+	image: 5.png
+	image font size: 35
+
+symbol:
+	code: ss6
+	image: 6.png
+	image font size: 35
+
+symbol:
+	code: ss7
+	image: 7.png
+	image font size: 35
+
+symbol:
+	code: ss8
+	image: 8.png
+	image font size: 35
+
+symbol:
+	code: ss9
+	image: 9.png
+	image font size: 35
+
+symbol:
+	code: ss0
+	image: 0.png
+	image font size: 35
+
+symbol:
+	code:ssad0
+	image: ad0.png
+	image font size: 60
+
+symbol:
+	code:ssad1
+	image: ad1.png
+	image font size: 60
+
+symbol:
+	code:ssad2
+	image: ad2.png
+	image font size: 60
+
+symbol:
+	code:ssad3
+	image: ad3.png
+	image font size: 60
+
+symbol:
+	code:ssad4
+	image: ad4.png
+	image font size: 60
+
+symbol:
+	code:ssad5
+	image: ad5.png
+	image font size: 60
+
+symbol:
+	code:ssad6
+	image: ad6.png
+	image font size: 60
+
+symbol:
+	code:ssad7
+	image: ad7.png
+	image font size: 60
+
+symbol:
+	code:ssad8
+	image: ad8.png
+	image font size: 60
+
+symbol:
+	code:ssad9
+	image: ad9.png
+	image font size: 60
+
+symbol:
+	code:ssag1
+	image: ag1.png
+	image font size: 60
+
+symbol:
+	code:ssag2
+	image: ag2.png
+	image font size: 60
+
+symbol:
+	code:ssag3
+	image: ag3.png
+	image font size: 60
+
+symbol:
+	code:ssag4
+	image: ag4.png
+	image font size: 60
+
+symbol:
+	code:ssag5
+	image: ag5.png
+	image font size: 60
+
+symbol:
+	code:ssag6
+	image: ag6.png
+	image font size: 60
+
+symbol:
+	code:ssag7
+	image: ag7.png
+	image font size: 60
+
+symbol:
+	code:ssag8
+	image: ag8.png
+	image font size: 60
+
+symbol:
+	code:ssag9
+	image: ag9.png
+	image font size: 60
+
+symbol:
+	code:ssag0
+	image: ag0.png
+	image font size: 60
+
+##############################################################
+# Insert-symbol menu
+insert symbol menu:
+	item: ssClick
+	item: ssCredit
+	item: ssLink
+	item: ssMU
+	item: ssRecurrent
+	item: ssSub
+	item: ssTrash
+	item: ssDiamond
+	item:
+		name: MU Cost
+		item: ss1
+		item: ss2
+		item: ss3
+		item: ss4
+		item: ss5
+		item: ss6
+		item: ss7
+		item: ss8
+		item: ss9
+		item: ss0
+	item:
+		name: Advancement Cost
+		item: ssad1
+		item: ssad2
+		item: ssad3
+		item: ssad4
+		item: ssad5
+		item: ssad6
+		item: ssad7
+		item: ssad8
+		item: ssad9
+		item: ssad0
+	item:
+		name: Agenda Points
+		item: ssag1
+		item: ssag2
+		item: ssag3
+		item: ssag4
+		item: ssag5
+		item: ssag6
+		item: ssag7
+		item: ssag8
+		item: ssag9
+		item: ssag0

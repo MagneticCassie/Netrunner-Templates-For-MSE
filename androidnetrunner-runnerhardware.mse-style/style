@@ -1,0 +1,149 @@
+mse version: 2.0.0
+game: androidnetrunner
+short name: Runner Hardware
+full name: Runner Hardware
+icon: cardsample.png
+position hint: 1
+installer group: androidnetrunner/style
+
+depends on:
+	package: androidnetrunner.mse-game
+
+depends on: androidnetrunner-symbol.mse-symbol-font
+
+card width: 750
+card height: 1050
+card dpi: 300
+card background: white
+
+init script:
+	get_left := {if (to_number(card.cost) or else 0) > 9 and (to_number(card.cost) or else 0) < 20 and (to_number(card.cost) or else 0) mod 10 != 1 then 46 else 50}
+	get_size := {if (to_number(card.cost) or else 0) > 9 then 38 else 50}
+
+card style:
+	runnerfaction:
+		render style: image
+		left: 0
+		top: 0
+		width: 750
+		height: 1050
+		z index: 2
+		popup style: in place
+		choice images:
+			neutral: neutral.png
+			shaper: shaper.png
+			criminal: criminal.png
+			anarch: anarch.png
+			sunny: sunny.png
+			adam: adam.png
+			apex: apex.png
+
+	artwork:
+		left: 43
+		top: 47
+		width: 669
+		height: 516
+		z index: 5
+		mask: mask.png
+
+	influence:
+		render style: image
+		right: 750
+		bottom: 1050
+		width: 63
+		height: 320
+		z index: 4
+		popup style: in place
+		choice images:
+			0: blank.png
+			1: influence_1.png
+			2: influence_2.png
+			3: influence_3.png
+			4: influence_4.png
+			5: influence_5.png
+
+	title:
+		left: 125
+		top: 528
+		width: 540
+		height: 50
+		alignment: middle left shrink-overflow
+		padding left: 20
+		z index: 2
+		font:
+			name: Trajan Pro
+			size: 28
+			color: rgb(0,0,0)
+		symbol font:
+			name: androidnetrunner-symbol
+			size: 28
+
+	artist:
+		left: 56
+		top: 998
+		width: 390
+		height: 50
+		alignment: middle left shrink-overflow
+		padding bottom: 0
+		z index: 2
+		font:
+			name: Arial
+			size: 14
+			color: rgb(255,255,255)
+
+	text:
+		left: 85
+		top: 671
+		width: 595
+		height: 315
+		alignment: top left shrink-overflow
+		padding left: 20
+		padding right: 20
+		z index: 2
+		font:
+			name: Minion Pro
+			size: 24
+			scale down to: 6
+			color: rgb(0,0,0)
+		symbol font:
+			name: androidnetrunner-symbol
+			size: 24
+
+	keywords:
+		left: 85
+		top: 614
+		width: 595
+		height: 50
+		alignment: top left shrink-overflow
+		padding left: 10
+		z index: 2
+		font:
+			name: Gill Sans STD
+			italic name: Monkirta Pursuit NC
+			size: 24
+			color: rgb(0,0,0)
+
+	cost:
+		left: { get_left() }
+		top: 58
+		width: 66
+		height: 66
+		alignment: center middle shrink-overflow
+		z index: 2
+		font:
+			name: Bank Gothic
+			size: { get_size() }
+			color: rgb(255,255,255)
+
+	design:
+		left: 622
+		top: 995
+		width: 50
+		height: 50
+		alignment: middle left shrink-overflow
+		padding bottom: 0
+		z index: 2
+		font:
+			name: Arial
+			size: 14
+			color: rgb(255,255,255)
