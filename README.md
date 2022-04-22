@@ -6,12 +6,19 @@ A set of templates for Magic Set Editor based on MNeMiC's Netrunner card frames.
 Put these in the data folder of your Magic Set Editor installation. You will need to have the following fonts installed:
 
 Gill Sans Standard
+
 Gill Sans Bold
+
 Trajan Pro Bold
+
 Minion Pro Regular
+
 Minion Pro Italic
+
 Bank Gothic Md
+
 Monkirta Pursuit NC
+
 Arial Narrow
 
 # HOW TO USE
