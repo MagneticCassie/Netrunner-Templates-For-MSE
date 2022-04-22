@@ -1,0 +1,156 @@
+mse version: 2.0.0
+game: androidnetrunner
+short name: Corp ID
+full name: Corp Identity
+icon: cardsample.png
+position hint: 1
+installer group: androidnetrunner/style
+
+depends on:
+	package: androidnetrunner.mse-game
+
+depends on: androidnetrunner-symbol.mse-symbol-font
+
+card width: 750
+card height: 1050
+card dpi: 300
+card background: white
+
+card style:
+	corpfaction:
+		render style: image
+		left: 0
+		top: 0
+		width: 750
+		height: 1050
+		z index: 2
+		popup style: in place
+		choice images:
+			neutral: neutral.png
+			haas-bioroid: hb.png
+			jinteki: jinteki.png
+			nbn: nbn.png
+			weyland: weyland.png
+
+	artwork:
+		left: 54
+		top: 0
+		width: 646
+		height: 752
+		z index: 4
+		mask: mask.png
+	
+	title:
+		left: 110
+		top: 56
+		width: 540
+		height: 50
+		alignment: middle left shrink-overflow
+		padding left: 20
+		z index: 2
+		font:
+			name: Trajan Pro
+			size: 28
+			color: rgb(0,0,0)
+		symbol font:
+			name: androidnetrunner-symbol
+			size: 28
+
+	subtitle:
+		left: 35
+		top: 112
+		width: 540
+		height: 50
+		alignment: middle left shrink-overflow
+		padding bottom: 0
+		z index: 2
+		font:
+			name: Trajan Pro
+			size: 21
+			color: rgb(0,0,0)
+
+	artist:
+		right: 747
+		bottom: 250
+		width: 390
+		height: 50
+		angle: 90
+		alignment: middle left shrink-overflow
+		padding bottom: 0
+		z index: 2
+		font:
+			name: Arial
+			size: 14
+			color: rgb(255,255,255)
+
+	text:
+		left: 130
+		top: 836
+		width: 600
+		height: 200
+		alignment: top left shrink-overflow
+		padding left: 10
+		z index: 2
+		font:
+			name: Minion Pro
+			size: 24
+			scale down to: 6
+			color: rgb(0,0,0)
+		symbol font:
+			name: androidnetrunner-symbol
+			size: 24
+
+	decksize:
+		left: 36
+		top: 914
+		width: 70
+		height: 50
+		alignment: middle left justify-all
+		z index: 2
+		font:
+			name: Bank Gothic
+			size: 38
+			color: rgb(0,0,0)
+
+	influencelimit:
+		left: 36
+		top: 970
+		width: 70
+		height: 50
+		alignment: middle left justify-all
+		z index: 2
+		font:
+			name: Bank Gothic
+			size: 38
+			color: rgb(255,255,255)
+			shadow color: rgb(50,50,51)
+			shadow displacement x: 3
+			shadow displacement y: 3
+
+	keywords:
+		left: 72
+		top: 772
+		width: 650
+		height: 50
+		alignment: top left shrink-overflow
+		padding bottom: 0
+		z index: 2
+		font:
+			name: Gill Sans STD
+			italic name: Monkirta Pursuit NC
+			size: 24
+			color: rgb(0,0,0)
+
+	design:
+		right: 747
+		bottom: 100
+		width: 50
+		height: 50
+		alignment: middle left shrink-overflow
+		padding bottom: 0
+		z index: 2
+		angle: 90
+		font:
+			name: Arial
+			size: 14
+			color: rgb(255,255,255)
