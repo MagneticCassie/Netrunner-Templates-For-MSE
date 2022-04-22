@@ -1,0 +1,171 @@
+mse version: 2.0.0
+game: androidnetrunner
+short name: Corp Operation
+full name: Corp Operation
+icon: cardsample.png
+position hint: 1
+installer group: androidnetrunner/style
+
+depends on:
+	package: androidnetrunner.mse-game
+
+depends on: androidnetrunner-symbol.mse-symbol-font
+
+card width: 750
+card height: 1050
+card dpi: 300
+card background: white
+
+init script:
+	get_left := {if (to_number(card.cost) or else 0) > 9 and (to_number(card.cost) or else 0) < 20 and (to_number(card.cost) or else 0) mod 10 != 1 then 36 else 40}
+	get_size := {if (to_number(card.cost) or else 0) > 9 then 38 else 50}
+
+card style:
+	corpfaction:
+		render style: image
+		left: 0
+		top: 0
+		width: 750
+		height: 1050
+		z index: 2
+		popup style: in place
+		choice images:
+			neutral: neutral.png
+			haas-bioroid: hb.png
+			jinteki: jinteki.png
+			nbn: nbn.png
+			weyland: weyland.png
+
+	artwork:
+		left: 0
+		top: 95
+		width: 750
+		height: 599
+		z index: 5
+		mask: mask.png
+
+	influence:
+		render style: image
+		left: {if card.corpfaction == "neutral" then 0 else 75}
+		bottom: 1050
+		width: 254
+		height: 69
+		z index: 4
+		popup style: in place
+		choice images:
+			0: blank.png
+			1: influence_1.png
+			2: influence_2.png
+			3: influence_3.png
+			4: influence_4.png
+			5: influence_5.png
+
+	trashicon:
+		render style: image
+		left: 633
+		top: 902
+		width: 86
+		height: 78
+		z index: 4
+		popup style: in place
+		choice images:
+			0: blank.png
+			1: trash.png
+
+	title:
+		left: 180
+		top: 31
+		width: 540
+		height: 50
+		alignment: middle left shrink-overflow
+		z index: 2
+		font:
+			name: Trajan Pro
+			size: 28
+			color: rgb(0,0,0)
+		symbol font:
+			name: androidnetrunner-symbol
+			size: 28
+
+	artist:
+		left: 334
+		top: 995
+		width: 390
+		height: 50
+		alignment: middle left shrink-overflow
+		padding bottom: 0
+		z index: 2
+		font:
+			name: Arial
+			size: 14
+			color: rgb(255,255,255)
+
+	text:
+		left: 66
+		top: 668
+		width: 620
+		height: 280
+		alignment: top left shrink-overflow
+		padding left: 20
+		padding right: 20
+		z index: 2
+		font:
+			name: Minion Pro
+			size: 24
+			scale down to: 6
+			color: rgb(0,0,0)
+		symbol font:
+			name: androidnetrunner-symbol
+			size: 24
+
+	keywords:
+		left: 66
+		top: 618
+		width: 620
+		height: 50
+		alignment: top left shrink-overflow
+		padding left: 10
+		z index: 2
+		font:
+			name: Gill Sans STD
+			italic name: Monkirta Pursuit NC
+			size: 24
+			color: rgb(0,0,0)
+
+	trashcost: 
+		left: 651
+		top: 917
+		width: 63
+		height: 50
+		alignment: center middle shrink-overflow
+		z index: 5
+		padding left: 5
+		font:
+			name: Impact
+			size: 40
+			color: rgb(129,119,106)
+
+	cost: 
+		left: { get_left() }
+		top: 45
+		width: 85
+		height: 91
+		alignment: middle center shrink-overflow
+		z index: 2
+		padding right min: 30
+		font:
+			name: Bank Gothic
+			size: { get_size() }
+			color: rgb(255,255,255)
+	design:
+		left: 675
+		top: 995
+		width: 50
+		height: 50
+		alignment: middle left shrink-overflow
+		padding bottom: 0
+		z index: 2
+		font:
+			name: Arial
+			size: 14
+			color: rgb(255,255,255)
